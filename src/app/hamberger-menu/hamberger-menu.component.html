@@ -1,0 +1,96 @@
+<div class="navbar">
+    <div style=" margin-left:2%;margin-top: 0.5%">
+      <span
+        style="font-size:20px;cursor:pointer;color:white ; font-family: Arial, Helvetica, sans-serif"
+        (click)="openNavBar()"
+        >&#9776; &nbsp; HOSPITAL MANAGEMENT SYSTEM
+      </span>
+    </div>
+  </div>
+  
+  <div id="mySidenav" [style.width]="sideBarWidth" class="sidenav">
+    <div [style.width]="sideBarWidth" class="hambergerNav">
+    </div>
+    <a class="closebtn" style="cursor: pointer;" (click)="closeNavBar()">
+      &times;
+    </a>
+    <div class="divHover" style="width: 100%; height: 50px;" (click)="gotodoctors()">
+      <li style=" margin-left: 5%; cursor: pointer; padding: 10px 0 10px 10px ">
+        <a>
+          <div style="width: 30px">
+            <img src="assets/icons8-medical-doctor-24.png" class="imgClass" />
+          </div>
+          <span
+            class="nav-text"
+            style="font-family: Arial, Helvetica, sans-serif; font-size: 18px"
+          >
+            Doctors
+          </span>
+        </a>
+      </li>
+    </div>
+  
+    <div class="divHover" style="width: 100%; height: 50px; " (click)="gotopatients()">
+      <li style=" margin-left: 5%; cursor: pointer; padding: 10px 0 10px 10px ">
+        <a>
+          <div style="width: 30px">
+            <img src="assets/icons8-out-patient-department-24.png" class="imgClass" />
+          </div>
+          <span
+            class="nav-text"
+            style="font-family: Arial, Helvetica, sans-serif; font-size: 18px"
+          >
+            Patients
+          </span>
+        </a>
+      </li>
+    </div>
+  
+    <div class="divHover" style="width: 100%; height: 50px;" (click)="gotoappointments()">
+      <li style=" margin-left: 5%; cursor: pointer; padding: 10px 0 10px 10px ">
+        <a>
+          <div style="width: 30px">
+            <img src="assets/icons8-appointment-scheduling-24.png" class="imgClass" />
+          </div>
+          <span
+            class="nav-text"
+            style="font-family: Arial, Helvetica, sans-serif; font-size: 18px"
+          >
+            Appointments
+          </span>
+        </a>
+      </li>
+    </div>
+  
+    <div class="divHover" style="width: 100%; height: 50px;" (click)="goToDiagnosis();">
+      <li style=" margin-left: 5%; cursor: pointer; padding: 10px 0 10px 10px ">
+        <a>
+          <div style="width: 30px">
+            <img src="assets/icons8-x-ray-24.png" class="imgClass" />
+          </div>
+          <span
+            class="nav-text"
+            style="font-family: Arial, Helvetica, sans-serif; font-size: 18px"
+          >
+            Diagnosis
+          </span>
+        </a>
+      </li>
+    </div>
+  
+    <div class="divHover" style="width: 100%; height: 50px;" (click)="routeToTreatment()">
+      <li style=" margin-left: 5%; cursor: pointer; padding: 10px 0 10px 10px ">
+        <a>
+          <div style="width: 30px">
+            <img src="assets/icons8-treatment-24.png" class="imgClass" />
+          </div>
+          <span
+            class="nav-text"
+            style="font-family: Arial, Helvetica, sans-serif; font-size: 18px"
+          >
+            Treatment
+          </span>
+        </a>
+      </li>
+    </div>
+  </div>
