@@ -5,7 +5,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Build
 
-Run 'npm install' to set up node
+Run 'npm install' to set up node.js
 
 Run `ng build` to build the project. 
 
